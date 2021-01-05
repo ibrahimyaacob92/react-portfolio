@@ -3,7 +3,7 @@
     right: 0;
     padding: 10px;
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 
 .contact-stamp a{
@@ -14,4 +14,10 @@
 .contact-stamp a:hover{
     font-size: 35px;
     transition: 0.5s;
+}
+
+.caption{
+    padding:0 10vw;
+    font-style: italic;
+    line-height: 24px;
 }

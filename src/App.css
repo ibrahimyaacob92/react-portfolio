@@ -8,6 +8,24 @@ html, body {
   overflow-x: hidden; 
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 h1 {
   padding: 0;
   margin: 0;
@@ -60,3 +78,42 @@ p {
   color:rgb(23, 173, 223);
 }
 
+.skill-grid{
+  padding: 3% 8%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 30px;
+}
+
+.child-grid{
+  /* border-left: mediumorchid 10px solid; */
+}
+
+.child-grid p{
+  margin-bottom: 20px;
+  color: rgb(30, 106, 136);
+}
+
+.square-tags{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+
+.square-tags span{
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(78, 167, 202, 0.781);
+  border-radius: 3px;
+}
+
+.square-tags span:hover{
+  color:black;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}

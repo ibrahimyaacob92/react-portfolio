@@ -2,8 +2,22 @@ import './App.css';
 import { SiDjango, SiReact } from 'react-icons/si'
 
 import { SectionHeader, SectionContent, ContactStamp } from './components'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
+const skillUrl = 'https://raw.githubusercontent.com/ibrahimyaacob92/portfolio-shoelace/master/data/mystack.json'
 
 function App() {
+
+  const [skills, setSkills] = useState({})
+  const getSkill = async () => {
+    const res = await axios.get(skillUrl)
+    setSkills(res.data)
+  }
+
+  useEffect(() => {
+    getSkill()
+  }, [])
 
   return (
     <>
@@ -20,6 +34,18 @@ function App() {
         <p>Johor Bharu, Malaysia</p>
       </SectionHeader>
       <SectionContent>
+
+        <h3>Introduction</h3>
+        <p className='caption'>
+          I'm a self taught developer who's striving to be good at what I'm doing.
+          I initially graduated with Mechanical Engineering Degree with little programming languange,
+          however as years goes by, most of the problem I face on my work experience require me to developed an automated solution.
+          From Excel formulas, VBA, Python and now JavaScript and the frameworks. 
+          I'm keen to find out where do we go from this.
+        </p>
+
+        <hr className='content-divider' />
+
         <h3>Problem Solving Beliefs</h3>
         <div className='flex-content'>
           <div>
@@ -37,6 +63,7 @@ function App() {
             <p>Why do things that is not enjoyable. If it's not make it so !</p>
           </div>
         </div>
+
       </SectionContent>
       <SectionHeader>
         <h1>My Solutions</h1>
@@ -53,10 +80,9 @@ function App() {
       </SectionHeader>
       <SectionContent>
         <div className='bg-flex'>
-          <div className='django-bg'><SiDjango size='350'/></div>
-          <div className='react-bg'><SiReact size='350'/></div>
+          <div className='django-bg'><SiDjango size='350' /></div>
+          <div className='react-bg'><SiReact size='350' /></div>
         </div>
-
         <h3>Weapon of Choice</h3>
         <div className='flex-content'>
           <div>
@@ -71,15 +97,37 @@ function App() {
             <p>React</p>
             <p>
               Personally, I find that front-end is much tougher as it is very subjective.
-              Write front end with structure, countless number of libraries and source and ofcourse components components & components !
+              Write front end with structure, countless number of libraries and source and of course who doesn't love components, JSX & hooks !
             </p>
           </div>
         </div>
-        <br/><br/><br/><br/><br/>
-        <h3>Featured Skills</h3>
+
+        <hr className='content-divider' />
+
+        <h3>Featured Tech Skills</h3>
+        <div className='skill-grid'>
+          {Object.keys(skills).map(skill => {
+            return (
+              <div className='child-grid'>
+                <p>{skill} {skills[skill].year_exp} yxp</p>
+                <div className='square-tags'>
+                  {skills[skill].modules.map(module => {
+                    return (
+                      <span >{module}</span>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          })}
+        </div>
+
+        <hr className='content-divider' />
+
+
       </SectionContent>
       <SectionContent>
-        
+
       </SectionContent>
     </>
   );
