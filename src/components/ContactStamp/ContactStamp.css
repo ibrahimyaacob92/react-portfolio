@@ -1,0 +1,17 @@
+.contact-stamp{
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.contact-stamp a{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+}
+
+.contact-stamp a:hover{
+    font-size: 35px;
+    transition: 0.5s;
+}

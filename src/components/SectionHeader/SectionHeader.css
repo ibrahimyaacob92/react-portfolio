@@ -1,0 +1,21 @@
+.section-header{
+    text-align: center;
+    color:white;
+    max-width: 100%;
+    padding: 15vh 0;
+
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=4ea6caff&noise=626262&density=41&opacity=10)
+}
+
+.section-header p{
+    margin-top: 10px;
+    font-family: 'Averia Serif Libre';
+}
+
+.section-header hr{
+    width: 30vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid lightblue;
+    border-width:0.2px;
+}
