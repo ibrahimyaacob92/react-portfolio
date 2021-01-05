@@ -3,7 +3,7 @@
     color:white;
     max-width: 100%;
     padding: 15vh 0;
-
+    background-color: rgba(78, 167, 202);
     background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=4ea6caff&noise=626262&density=41&opacity=10)
 }
 
