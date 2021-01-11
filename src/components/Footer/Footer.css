@@ -1,0 +1,7 @@
+.footer{
+    text-align: center;
+    color:black;
+    padding: 5vh 0;
+    background-image:url(http://api.thumbr.it/whitenoise-361x370.png?background=f0f0f0ff&noise=787878&density=13&opacity=13);
+    font-weight: bold;
+}

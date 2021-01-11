@@ -18,6 +18,9 @@
 
 .caption{
     padding:0 10vw;
+    max-width: 1000px;
+    text-align: center;
     font-style: italic;
     line-height: 24px;
+    margin: auto;
 }
