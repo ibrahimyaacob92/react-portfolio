@@ -65,28 +65,32 @@ function App() {
         </Fade>
         <hr className="content-divider" />
 
-        <Fade left>
-          <h3>Problem Solving Beliefs</h3>
-          <div className="flex-content">
+        <h3>Problem Solving Beliefs</h3>
+        <div className="flex-content">
+          <Fade left>
             <div>
               <p>Simplicity</p>
               <p>
-                Strive for simple solution. It helps oneself and the next guy
-                maintaining it.
+                A little simplification would be the first step toward rational
+                living
               </p>
             </div>
+          </Fade>
+          <Fade bottom>
             <div>
               <p>Efficiency</p>
-              <p>Do less but produce more for time and energy are priceless.</p>
+              <p>Do less but produce more for time and energy are priceless</p>
             </div>
+          </Fade>
+          <Fade right>
             <div>
               <p>Fun</p>
               <p>
                 Why do things that is not enjoyable. If it's not make it so !
               </p>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </SectionContent>
 
       <SectionHeader>
@@ -99,14 +103,14 @@ function App() {
       </SectionHeader>
 
       <SectionContent>
-        <Fade right>
-          <h3>Personal Projects</h3>
+        <h3>Personal Projects</h3>
 
-          <hr className="content-divider" />
-          <h3>Work Experience</h3>
-          {workExperience.map((experience) => {
-            return (
-              <div className="list-content">
+        <hr className="content-divider" />
+        <h3>Work Experience</h3>
+        {workExperience.map((experience) => {
+          return (
+            <div className="list-content">
+              <Fade bottom>
                 <div className="list-content-header">
                   <h4>{experience.name}</h4>
                   <p>
@@ -114,26 +118,27 @@ function App() {
                     {experience.employer}
                   </p>
                 </div>
-                <div className="list-content-detail">
+              </Fade>
+              <div className="list-content-detail">
+                <Fade bottom>
                   <p className="detail">{experience.description}</p>
-                  
-                  <Fade bottom>
-                    <p className="more">{experience.detail}</p>
-                  </Fade>
-                  <div className="square-tags">
-                    {experience.stack.map((tech) => {
-                      return (
-                        <Bounce>
-                          <span>{tech}</span>
-                        </Bounce>
-                      );
-                    })}
-                  </div>
+                </Fade>
+                <Fade right>
+                  <p className="more">{experience.detail}</p>
+                </Fade>
+                <div className="square-tags">
+                  {experience.stack.map((tech) => {
+                    return (
+                      <Bounce>
+                        <span>{tech}</span>
+                      </Bounce>
+                    );
+                  })}
                 </div>
               </div>
-            );
-          })}
-        </Fade>
+            </div>
+          );
+        })}
       </SectionContent>
 
       <SectionHeader>
@@ -143,37 +148,45 @@ function App() {
       </SectionHeader>
 
       <SectionContent>
-        <Fade bottom>
-          <div className="bg-flex">
+        
+        <div className="bg-flex">
+          <Fade left>
             <div className="django-bg">
               <SiDjango />
             </div>
+          </Fade>
+          <Fade right>
             <div className="react-bg">
               <SiReact />
             </div>
+          </Fade>
+        </div>
+        <h3>Weapon of Choice</h3>
+        <div className="flex-content">
+          <Fade top>
+          <div>
+            <p>Django</p>
+            <p>
+              By far the most efficient framework to create a highly scalable
+              application. Django ORM gives you advantage where you don't need
+              to do SQL query ! Not suitable for small application they say, but
+              most of time application are meant to grow !
+            </p>
           </div>
-          <h3>Weapon of Choice</h3>
-          <div className="flex-content">
-            <div>
-              <p>Django</p>
-              <p>
-                By far the most efficient framework to create a highly scalable
-                application. Django ORM gives you advantage where you don't need
-                to do SQL query ! Not suitable for small application they say,
-                but most of time application are meant to grow !
-              </p>
-            </div>
-            <div>
-              <p>React</p>
-              <p>
-                Personally, I find that front-end is much tougher as it is very
-                subjective. Write front end with structure, countless number of
-                libraries and source and of course who doesn't love components,
-                JSX & hooks !
-              </p>
-            </div>
+          </Fade>
+          <Fade bottom>
+          <div>
+            <p>React</p>
+            <p>
+              Personally, I find that front-end is much tougher as it is very
+              subjective. Write front end with structure, countless number of
+              libraries and source and of course who doesn't love components,
+              JSX & hooks !
+            </p>
           </div>
-        </Fade>
+          </Fade>
+        </div>
+
         <hr className="content-divider" />
 
         <h3>Featured Tech Skills</h3>
@@ -182,14 +195,14 @@ function App() {
             return (
               <div key={uuid()} className="child-grid">
                 <Fade top>
-                <h4>
-                  {skill}{" "}
-                  <span key={uuid()} className="accent-pill">
-                    {" "}
-                    {skills[skill].year_exp}
-                    {" Years"}
-                  </span>
-                </h4>
+                  <h4>
+                    {skill}{" "}
+                    <span key={uuid()} className="accent-pill">
+                      {" "}
+                      {skills[skill].year_exp}
+                      {" Years"}
+                    </span>
+                  </h4>
                 </Fade>
                 <div className="square-tags">
                   {skills[skill].modules.map((module) => {

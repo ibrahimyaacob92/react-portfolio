@@ -55,6 +55,7 @@ h3 {
   font-family: 'Averia Serif Libre';
 }
 
+
 h4{
   font-size: 1.1em;
   margin:0;
@@ -103,8 +104,8 @@ p {
   }
   .django-bg{
     margin-right: 40px;
-    margin-top: 30px;
-    height:200px;
+    margin-top: 25px;
+    height:180px;
   }
 
 }
@@ -121,17 +122,13 @@ p {
 @media only screen and (max-width:650px){
   .skill-grid{
     grid-template-columns: 1fr;
+  }
 
+  h1,h2{
+    letter-spacing: 0.1rem;
   }
 }
 
-.child-grid{
-  /* border-left: mediumorchid 10px solid; */
-}
-
-.child-grid p{
-
-}
 
 .square-tags{
   display: flex;
