@@ -1,5 +1,6 @@
 import "./App.css";
 import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 import uuid from "uuid/dist/v4";
 import { SiDjango, SiReact } from "react-icons/si";
 import {
@@ -106,17 +107,28 @@ function App() {
           {workExperience.map((experience) => {
             return (
               <div className="list-content">
-                <h4>{experience.name}</h4>
-                <p>
-                  {experience.period} · {experience.role} ·{" "}
-                  {experience.employer}
-                </p>
-                <p>{experience.description}</p>
-                <p>{experience.detail}</p>
-                <div className="square-tags">
-                  {experience.stack.map((tech) => {
-                    return <span>{tech}</span>;
-                  })}
+                <div className="list-content-header">
+                  <h4>{experience.name}</h4>
+                  <p>
+                    {experience.period} · {experience.role} ·{" "}
+                    {experience.employer}
+                  </p>
+                </div>
+                <div className="list-content-detail">
+                  <p className="detail">{experience.description}</p>
+                  
+                  <Fade bottom>
+                    <p className="more">{experience.detail}</p>
+                  </Fade>
+                  <div className="square-tags">
+                    {experience.stack.map((tech) => {
+                      return (
+                        <Bounce>
+                          <span>{tech}</span>
+                        </Bounce>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             );
@@ -161,34 +173,40 @@ function App() {
               </p>
             </div>
           </div>
-
-          <hr className="content-divider" />
-
-          <h3>Featured Tech Skills</h3>
-          <div className="skill-grid">
-            {Object.keys(skills).map((skill) => {
-              return (
-                <div key={uuid()} className="child-grid">
-                  <h4>
-                    {skill}{" "}
-                    <span key={uuid()} className="accent-pill">
-                      {" "}
-                      {skills[skill].year_exp}{" "}
-                    </span>
-                  </h4>
-                  <div className="square-tags">
-                    {skills[skill].modules.map((module) => {
-                      return <span key={uuid()}>{module}</span>;
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
         </Fade>
+        <hr className="content-divider" />
+
+        <h3>Featured Tech Skills</h3>
+        <div className="skill-grid">
+          {Object.keys(skills).map((skill) => {
+            return (
+              <div key={uuid()} className="child-grid">
+                <Fade top>
+                <h4>
+                  {skill}{" "}
+                  <span key={uuid()} className="accent-pill">
+                    {" "}
+                    {skills[skill].year_exp}
+                    {" Years"}
+                  </span>
+                </h4>
+                </Fade>
+                <div className="square-tags">
+                  {skills[skill].modules.map((module) => {
+                    return (
+                      <Bounce>
+                        <span key={uuid()}>{module}</span>
+                      </Bounce>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </SectionContent>
       <Footer>
-        <p>Created quickly with React</p>
+        <p>Created quickly with React & text animation with React Reveal</p>
       </Footer>
     </>
   );

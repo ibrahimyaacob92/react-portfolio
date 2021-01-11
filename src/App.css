@@ -57,7 +57,8 @@ h3 {
 
 h4{
   font-size: 1.1em;
-  margin-bottom: 20px;
+  margin:0;
+  padding-bottom: 5px;
   color: rgb(30, 106, 136);
 }
 
@@ -65,6 +66,11 @@ p {
   padding: 0;
   margin: 0;
   letter-spacing: .05rem;
+  
+}
+
+.more{
+  font-style: italic;
 }
 
 .bg-flex{
@@ -112,7 +118,7 @@ p {
   row-gap: 30px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:650px){
   .skill-grid{
     grid-template-columns: 1fr;
 
@@ -132,6 +138,7 @@ p {
   flex-wrap: wrap;
   row-gap: 5px;
   column-gap: 5px;
+  margin-top: 10px;
 }
 
 .square-tags span{
@@ -140,23 +147,26 @@ p {
   color: white;
   background-color: rgba(78, 167, 202, 0.781);
   border-radius: 3px;
+  font-size: 0.9em;
 }
 
 .square-tags span:hover{
   color:black;
   background-color: transparent;
   transition: 0.5s;
-  cursor: pointer;
 }
 
 .accent-pill{
   background-color: rgb(130, 204, 121);
-  padding: 5px;
+  padding: 3px 10px;
   color: white;
+  font-size: 0.9em;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.accent-pill::after{
-  content: 'years';
+.accent-pill:hover{
+  color:black;
+  background-color: transparent;
+  transition: 0.5s;
 }
