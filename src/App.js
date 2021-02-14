@@ -11,11 +11,14 @@ import {
 } from "./components";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import {Helmet} from 'react-helmet'
 
 const skillUrl =
   "https://raw.githubusercontent.com/ibrahimyaacob92/portfolio-shoelace/master/data/mystack.json";
 const workExpUrl =
   "https://raw.githubusercontent.com/ibrahimyaacob92/portfolio-shoelace/master/data/projects.json";
+
+
 
 function App() {
   const [skills, setSkills] = useState({});
@@ -37,6 +40,11 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Ibrahim Yaacob</title>
+        <meta name="Description" content="Online Portfolio for Ibrahim"/>
+      </Helmet>
+    
       <ContactStamp
         github="https://github.com/ibrahimyaacob92"
         linkedIn="https://www.linkedin.com/in/ibrahim-yaacob-76b598b5/"
