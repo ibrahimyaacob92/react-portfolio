@@ -1,11 +1,14 @@
-html, body {
-  font-family: 'roboto';
+@import "styles/Variables.css";
+
+html,
+body {
+  font-family: "roboto";
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -14,51 +17,56 @@ html, body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   padding: 0;
   margin: 0;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   font-size: 2em;
   font-weight: 300;
-  font-family: 'Averia Serif Libre';
+  font-family: "Averia Serif Libre";
   text-transform: uppercase;
 }
 
 h2 {
   padding: 0;
   margin: 0;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   font-size: 1.1em;
   font-weight: 300;
-  font-family: 'Averia Serif Libre';
+  font-family: "Averia Serif Libre";
   text-transform: uppercase;
 }
 
 h3 {
   padding: 0;
   margin: 0;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-size: 1.1em;
   font-weight: bold;
-  font-family: 'Averia Serif Libre';
+  font-family: "Averia Serif Libre";
 }
 
-
-h4{
+h4 {
   font-size: 1.1em;
-  margin:0;
+  margin: 0;
   padding-bottom: 5px;
   color: rgb(30, 106, 136);
 }
@@ -66,51 +74,49 @@ h4{
 p {
   padding: 0;
   margin: 0;
-  letter-spacing: .05rem;
-  
+  letter-spacing: 0.05rem;
 }
 
-.more{
+.more {
   font-style: italic;
 }
 
-.bg-flex{
+.bg-flex {
   width: 100%;
   position: absolute;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   justify-items: flex-end;
   opacity: 0.3 !important;
   font-size: 320px;
 }
 
-.django-bg{
-  color:rgb(46, 107, 54);
+.django-bg {
+  color: rgb(46, 107, 54);
 }
 
-.react-bg{
-  color:rgb(23, 173, 223);
+.react-bg {
+  color: rgb(23, 173, 223);
 }
 
-@media only screen and (max-width:600px){
-  .bg-flex{
+@media only screen and (max-width: 600px) {
+  .bg-flex {
     flex-direction: column;
     font-size: 200px;
-    padding-top: 10px; 
+    padding-top: 10px;
     justify-content: space-evenly;
-    justify-items:start;
+    justify-items: start;
     row-gap: 20px;
     opacity: 0.2 !important;
   }
-  .django-bg{
+  .django-bg {
     margin-right: 40px;
     margin-top: 25px;
-    height:180px;
+    height: 180px;
   }
-
 }
 
-.skill-grid{
+.skill-grid {
   padding: 3% 8%;
   text-align: left;
   display: grid;
@@ -119,18 +125,18 @@ p {
   row-gap: 30px;
 }
 
-@media only screen and (max-width:650px){
-  .skill-grid{
+@media only screen and (max-width: 650px) {
+  .skill-grid {
     grid-template-columns: 1fr;
   }
 
-  h1,h2{
+  h1,
+  h2 {
     letter-spacing: 0.1rem;
   }
 }
 
-
-.square-tags{
+.square-tags {
   display: flex;
   flex-wrap: wrap;
   row-gap: 5px;
@@ -138,7 +144,7 @@ p {
   margin-top: 10px;
 }
 
-.square-tags span{
+.square-tags span {
   padding: 5px;
   font-weight: bold;
   color: white;
@@ -147,13 +153,13 @@ p {
   font-size: 0.9em;
 }
 
-.square-tags span:hover{
-  color:black;
+.square-tags span:hover {
+  color: black;
   background-color: transparent;
   transition: 0.5s;
 }
 
-.accent-pill{
+.accent-pill {
   background-color: rgb(130, 204, 121);
   padding: 3px 10px;
   color: white;
@@ -162,8 +168,8 @@ p {
   border-bottom-right-radius: 10px;
 }
 
-.accent-pill:hover{
-  color:black;
+.accent-pill:hover {
+  color: black;
   background-color: transparent;
   transition: 0.5s;
 }
