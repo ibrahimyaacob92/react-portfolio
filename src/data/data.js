@@ -83,7 +83,7 @@ export const links = [
 // high level only
 export const education = {
   course: "BSc Mechanical Engineering",
-  university: "University Technologi Malaysia",
+  university: "University Technology Malaysia",
   cgpa: "3.64",
   period: "Sept 2011 - Apr 2015",
   location: "Johor, MY",
