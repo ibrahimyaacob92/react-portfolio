@@ -8,6 +8,7 @@ import {
   IoStarOutline,
 } from "react-icons/io5";
 import {
+  heading,
   contactsData,
   education,
   technologies,
@@ -18,7 +19,8 @@ import {
   interest,
   workExperiences,
   projects,
-} from "../data/data.js";
+  // } from "../data/softwareEngineer.js";
+} from "../data/softwareEngineer.js";
 
 const Resume = () => {
   return (
@@ -27,8 +29,8 @@ const Resume = () => {
         <div className="side-pane">
           <div className="section-group">
             <div>
-              <h1>Ibrahim Yaacob</h1>
-              <h2 className="header">Full Stack Developer</h2>
+              <h1>{heading.name}</h1>
+              <h2 className="header">{heading.title}</h2>
               <div className="contacts">
                 {contactsData.map((item, index) => (
                   <>
@@ -57,7 +59,7 @@ const Resume = () => {
             </div>
             <div>
               <h2 className="header">SKILLS</h2>
-              <p className="subheader">Languages</p>
+              <p className="subheader">Languages [Years]</p>
               <div className="two-column">
                 {languages.map((item) => (
                   <p className="icon-parag">
@@ -80,12 +82,12 @@ const Resume = () => {
                   </p>
                 ))}
               </div>
-              <p className="subheader">Management</p>
+              <p className="subheader">Engineering</p>
               <div
-                style={{ marginBottom: "10px" }}
                 className="education-content"
+                style={{ marginBottom: "12px" }}
               >
-                {managerial.map((item) => (
+                {engineering.map((item) => (
                   <p className="icon-parag">
                     <item.icon className="accent" size={item.iconSize} />
                     <span className="split-column">
@@ -94,9 +96,12 @@ const Resume = () => {
                   </p>
                 ))}
               </div>
-              <p className="subheader">Mechanical Engineering</p>
-              <div className="education-content">
-                {engineering.map((item) => (
+              <p className="subheader">Others</p>
+              <div
+                style={{ marginBottom: "12px" }}
+                className="education-content"
+              >
+                {managerial.map((item) => (
                   <p className="icon-parag">
                     <item.icon className="accent" size={item.iconSize} />
                     <span className="split-column">
@@ -181,9 +186,7 @@ const Resume = () => {
             </div>
           </div>
           <div>
-            <h1 style={{ marginBottom: "10px" }}>
-              OTHER PROJECTS & EXPERIENCES
-            </h1>
+            <h1 style={{ marginBottom: "10px" }}>OTHER EXPERIENCES</h1>
             <div
               style={{
                 rowGap: "10px",

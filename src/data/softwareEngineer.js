@@ -22,20 +22,27 @@ import {
   SiMongodb,
   SiUbuntu,
   SiNginx,
-  SiNextDotJs,
+  SiNextdotjs,
   SiRedis,
-  SiSocketDotIo,
+  SiSocketdotio,
   SiDjango,
   SiMicrosoftexcel,
   SiTypescript,
   SiAuth0,
   SiRedux,
   SiAtlassian,
+  SiPrisma,
+  SiMicrosoftazure,
 } from "react-icons/si";
 import { CgPiano } from "react-icons/cg";
 import { GiCookingPot, GiChickenOven } from "react-icons/gi";
 import { BsFillGearFill } from "react-icons/bs";
 import { HiOutlineLightBulb } from "react-icons/hi";
+
+export const heading = {
+  name: "Ibrahim Yaacob",
+  title: "Full-Stack Developer",
+};
 
 export const contactsData = [
   {
@@ -103,14 +110,8 @@ export const languages = [
     iconSize: "22px",
   },
   {
-    name: "SQL",
-    years: "3",
-    icon: SiPostgresql,
-    iconSize: "18px",
-  },
-  {
     name: "TypeScript",
-    years: "1",
+    years: "2",
     icon: SiTypescript,
     iconSize: "18px",
   },
@@ -118,21 +119,21 @@ export const languages = [
 
 export const technologies = [
   {
-    name: "Django",
-    years: "3 Years",
-    icon: SiDjango,
-    iconSize: "18px",
-  },
-  {
     name: "ReactJS",
     years: "3 Years",
     icon: IoLogoReact,
     iconSize: "18px",
   },
   {
+    name: "Redux (RTK)",
+    years: "2 Years",
+    icon: SiRedux,
+    iconSize: "18px",
+  },
+  {
     name: "NextJS",
     years: "3 Years",
-    icon: SiNextDotJs,
+    icon: SiNextdotjs,
     iconSize: "18px",
   },
   {
@@ -160,6 +161,19 @@ export const technologies = [
     iconSize: "18px",
   },
   {
+    name: "PrismaJS",
+    years: "3 Years",
+    icon: SiPrisma,
+    iconSize: "18px",
+  },
+
+  {
+    name: "Django",
+    years: "3 Years",
+    icon: SiDjango,
+    iconSize: "18px",
+  },
+  {
     name: "Git",
     years: "3 Years",
     icon: IoLogoGithub,
@@ -178,15 +192,21 @@ export const technologies = [
     iconSize: "18px",
   },
   {
-    name: "Redis",
+    name: "MS Azure",
     years: "3 Years",
-    icon: SiRedis,
+    icon: SiMicrosoftazure,
     iconSize: "18px",
   },
+  // {
+  //   name: "Redis",
+  //   years: "3 Years",
+  //   icon: SiRedis,
+  //   iconSize: "18px",
+  // },
   {
     name: "Websocket",
     years: "1 Years",
-    icon: SiSocketDotIo,
+    icon: SiSocketdotio,
     iconSize: "18px",
   },
   {
@@ -283,9 +303,9 @@ export const managerial = [
 
 export const interest = [
   {
-    name:"Coding",
+    name: "Coding",
     icon: IoCode,
-    iconSize:"18px"
+    iconSize: "18px",
   },
   {
     name: "Music",
@@ -293,9 +313,9 @@ export const interest = [
     iconSize: "18px",
   },
   {
-    name:"Startup Ideas",
+    name: "Startup Ideas",
     icon: HiOutlineLightBulb,
-    iconSize:"22px"
+    iconSize: "22px",
   },
   {
     name: "Videography",
@@ -318,18 +338,23 @@ export const workExperiences = [
   {
     company: "Dyson Development Center",
     period: "Feb 2018 - Present",
-    role: "Business Analyst / Developer",
+    role: "Solution Developer",
     description:
-      "Working in a small team that supports Test Department in developing integrated systems solution to improve the current process and output.",
+      "Working in a team that supports Test Department in developing integrated systems solution to improve the efficiency, quality & security of data handling & practices.",
     experiences: [
       {
         title:
           "Test Data Collecting Framework (JIRA's TestRail-like Application)",
         points: [
-          "Design and Develop an integrated framework to render test-data-collection template from Python Scripts using React-Electron Boilerplate, Node & MongoDB",
+          "Leading, designing and develop an integrated framework to render test-data-collection template from Python Scripts using React, Node, Electron, Redux & MongoDB",
           "The framework handles API integration to the Test Request, Asset Management system and MongoDB's Test Data Storage. Also, Using Node's Python-Shell module to run Python Scripts for template initialization and calculation requests",
-          "Previously, most of the test data are collected with Excel Templates that suffers from discrepancy and would have poor maintainability and scalability",
-          "The solution implemented to the Operation increases the efficiency by 40% by eliminating the time spent on the data lookup and the needs for file management",
+        ],
+      },
+      {
+        title: "Asset Management System",
+        points: [
+          "Asset management system, replicating from Asset Panda, using NextJS, Postgres and Prisma ORM, replicating on-shelf tool, Asset Panda",
+          "Heavily customize the frontend side for user convenience to update a batch of data, integrated login with Azure Active Directory and build a rest API for other system to interact with",
         ],
       },
       {
@@ -337,51 +362,48 @@ export const workExperiences = [
         points: [
           "Design and Develop a simple tool for laboratory test requests using Django, Rest Framework and PostgreSQL with Vanilla JS",
           "A simple tool to create and workflow a test request by associating 'Test Methods', Samples, Laboratories and operator",
-          "The data in Postgres also served as Master Data for other application usage, such as Tableau Reporting and Test Data Collector Tools",
-        ],
-      },
-      {
-        title: "Universal Test Data Schema & Excel Test Data Ingestor",
-        points: [
-          "An extensive data engineering effort to create the schema of the universal test data structure to fit multiple types of Laboratory & Product Test Methods",
-          "Built a Python App to write and ingest test data from multiple Excel Test Report Templates to JSON file (later to be ingested by other tool)",
-          "Used XLWings and OpenPyXL to interact with Excel and Python Eel & JavaScript for the UI",
-        ],
-      },
-      {
-        title: "Excel VBA Works",
-        points: [
-          "Acoustic Sound Power Level Calculator & Report Generator",
-          "Lab Scheduling and Activity Listing",
         ],
       },
     ],
   },
   {
-    company: "Daikin Refrigeration",
-    period: "Feb 2017 - Jan 2018",
+    company: "Part-Time Freelancing",
+    period: "2020 - Present",
+    role: "Fullstack Developer (FE Focus)",
+    description:
+      "To build the confidence in web/software, development, I had to take up the freelancing job to gain more experience on how real-life development project works",
+    experiences: [
+      {
+        title: "InsightTribe",
+        points: [
+          "Work on building WXllspace website, a US-based, platform start-up, that connects building (wall) owner to wall artist. The app uses MERN Stack equipped with Google Map, Mapbox, MailerSend API and AWS S3",
+        ],
+      },
+      {
+        title: "QuestDrive",
+        points: [
+          "Work on admin page system for online game application that initially uses React with TypeScript, Redux Toolkit and MUI",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Mechanical Engineering",
+    period: "May 2015 - Jan 2018",
     role: "Product Test Engineer",
-    description:
-      "Responsible of overseing the R&D Test Activity, Verifying Results & Reporting for Refrigeration Products",
+    description: "The years before I get into the tech world",
     experiences: [
       {
-        title: "Cooling Performance Calculator & Report Generator",
+        title: "Daikin Refrigeration, May 2015 - Jan 2018",
         points: [
-          "Using Excel VBA, develop a Thermodynamics calculation algorithm to the cooling performance of condensing unit and generates an A4 report post verification",
+          "Responsible of overseing the R&D Test Activity, Verifying Results & Reporting for Refrigeration Products. Began coding professionally with Excel VBA",
         ],
       },
-    ],
-  },
-  {
-    company: "Vitrox Technology",
-    period: "Feb 2017 - Jan 2018",
-    role: "Hardware Design Engineer",
-    description:
-      "Design the machine vision hardwares for semiconductor inspection unit with SolidWorks",
-    experiences: [
       {
-        title: "",
-        points: [],
+        title: "Vitrox Technology, May 2015 - Sept 2016",
+        points: [
+          "Design the machine vision hardwares for semiconductor inspection unit with SolidWorks",
+        ],
       },
     ],
   },
@@ -389,25 +411,23 @@ export const workExperiences = [
 
 export const projects = [
   {
-    title: "makcikbawang.my",
+    title: "Yayasan Peneraju Digital Computing Course 2022",
     points: [
-      "Biography + Social Media App for Malaysians that allows people to vote & discuss the actions or events revolving a figure",
-      "Developed using NextJS + Django Rest Framework, deployed on Digital Ocean",
-      '"Makcik Bawang" is a Malaysian term combining Keyboard Warrior + "Karen"'
+      "Four Months course of Digital Leadership and Microsoft Azure Certificates for Administrator, Security Engineer and Solution Architects",
     ],
   },
   {
-    title:"Resume Builder",
-    points:[
-      "This resume is generated from a resume builder using ReactJS",
-      "Fetches data from the JSON file in GitHub"
-    ]
+    title: "Hackathons",
+    points: [
+      "RHB Virtual Datathon 2022",
+      "MyHackathon 2021 - Digitizing Government Service",
+    ],
   },
   {
-    title:"Side Work",
-    points:[
-      "Portfolio Landing Page",
-      "Simple E-Commerce"
-    ]
-  }
+    title: "Side Projects",
+    points: [
+      "My Repo is Better than yours, a repo scoring and comparison site: \nhttps://myrepoisbetterthanyours.netlify.app",
+      "Personal NextJS Boilerplate: \nhttps://miy-next-boilerplate.vercel.app",
+    ],
+  },
 ];

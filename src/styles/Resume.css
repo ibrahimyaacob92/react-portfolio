@@ -14,6 +14,7 @@
   box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
   display: grid;
   grid-template-columns: 2.8in auto;
+  white-space: pre-line;
 }
 
 .resume h1,
@@ -131,7 +132,8 @@ h3 {
 .resume .border-left {
   border: solid;
   border-width: 0 0 0 3px;
-  border-image: linear-gradient(to bottom, orange, rgba(255, 255, 255, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, orange, rgba(255, 255, 255, 0)) 1
+    100%;
 }
 
 @media print {
@@ -139,8 +141,8 @@ h3 {
     width: var(--a4-width);
     height: var(--a4-height);
     overflow: hidden;
-    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
-    color-adjust: exact !important;                 /*Firefox*/
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+    color-adjust: exact !important; /*Firefox*/
   }
 
   body {
