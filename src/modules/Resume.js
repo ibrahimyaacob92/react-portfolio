@@ -70,7 +70,6 @@ const Resume = () => {
                   </p>
                 ))}
               </div>
-
               <p className="subheader">Technologies</p>
               <div className="two-column">
                 {technologies.map((item) => (
@@ -82,7 +81,7 @@ const Resume = () => {
                   </p>
                 ))}
               </div>
-              <p className="subheader">Engineering</p>
+              {/* <p className="subheader">Engineering</p>
               <div
                 className="education-content"
                 style={{ marginBottom: "12px" }}
@@ -95,8 +94,8 @@ const Resume = () => {
                     </span>
                   </p>
                 ))}
-              </div>
-              <p className="subheader">Others</p>
+              </div> */}
+              <p className="subheader">Product Development</p>
               <div
                 style={{ marginBottom: "12px" }}
                 className="education-content"
@@ -156,7 +155,9 @@ const Resume = () => {
             <div className="section-group-2">
               {workExperiences.map((job) => (
                 <div>
-                  <h2 className="header uppercase">{job.company}</h2>
+                  <a href={job.link}>
+                    <h2 className="header uppercase">{job.company}</h2>
+                  </a>
                   <p className="subheader">
                     <span>{job.role}</span> {" · "}
                     <span>{job.period}</span>
@@ -185,7 +186,7 @@ const Resume = () => {
               ))}
             </div>
           </div>
-          <div>
+          <div style={{ marginTop: "10px" }}>
             <h1 style={{ marginBottom: "10px" }}>OTHER EXPERIENCES</h1>
             <div
               style={{

@@ -1,4 +1,9 @@
-import { AiFillGithub, AiTwotonePhone, AiFillLinkedin } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiTwotonePhone,
+  AiFillLinkedin,
+  AiOutlineDotChart,
+} from "react-icons/ai";
 import {
   IoLocationSharp,
   IoMail,
@@ -23,25 +28,42 @@ import {
   SiUbuntu,
   SiNginx,
   SiNextdotjs,
+  SiGraphql,
   SiRedis,
   SiSocketdotio,
+  SiApollographql,
   SiDjango,
   SiMicrosoftexcel,
+  SiCypress,
+  SiCodesandbox,
   SiTypescript,
   SiAuth0,
+  SiHasura,
   SiRedux,
   SiAtlassian,
   SiPrisma,
   SiMicrosoftazure,
+  SiPostman,
+  SiMaterialui,
+  SiStripe,
+  SiPaypal,
+  SiFirebase,
 } from "react-icons/si";
 import { CgPiano } from "react-icons/cg";
-import { GiCookingPot, GiChickenOven } from "react-icons/gi";
+import {
+  GiCookingPot,
+  GiChickenOven,
+  GiBearHead,
+  GiHedgehog,
+} from "react-icons/gi";
 import { BsFillGearFill } from "react-icons/bs";
 import { HiOutlineLightBulb } from "react-icons/hi";
+import { GrCodeSandbox } from "react-icons/gr";
+import { TbLetterS, TbWebhook } from "react-icons/tb";
 
 export const heading = {
   name: "Ibrahim Yaacob",
-  title: "Full-Stack Developer",
+  title: "Full-Stack Typescript Developer",
 };
 
 export const contactsData = [
@@ -54,8 +76,8 @@ export const contactsData = [
   {
     icon: AiTwotonePhone,
     label: "Phone",
-    value: "(+60)148403895",
-    link: "https://api.whatsapp.com/send?phone=60148403895",
+    value: "(+60)196099788",
+    link: "https://api.whatsapp.com/send?phone=60196099788",
   },
   {
     icon: IoLocationSharp,
@@ -98,21 +120,21 @@ export const education = {
 
 export const languages = [
   {
-    name: "Python",
-    years: "4",
-    icon: IoLogoPython,
+    name: "TypeScript",
+    years: "3",
+    icon: SiTypescript,
     iconSize: "18px",
   },
   {
     name: "JavaScript",
-    years: "3",
+    years: "4",
     icon: IoLogoJavascript,
     iconSize: "22px",
   },
   {
-    name: "TypeScript",
-    years: "2",
-    icon: SiTypescript,
+    name: "Python",
+    years: "3",
+    icon: IoLogoPython,
     iconSize: "18px",
   },
 ];
@@ -122,12 +144,6 @@ export const technologies = [
     name: "ReactJS",
     years: "3 Years",
     icon: IoLogoReact,
-    iconSize: "18px",
-  },
-  {
-    name: "Redux (RTK)",
-    years: "2 Years",
-    icon: SiRedux,
     iconSize: "18px",
   },
   {
@@ -143,23 +159,18 @@ export const technologies = [
     iconSize: "18px",
   },
   {
-    name: "PostgreSQL",
-    years: "3 Years",
-    icon: SiPostgresql,
+    name: "TRPC",
+    years: "1 Years",
+    icon: SiCodesandbox,
     iconSize: "18px",
   },
   {
-    name: "ElectronJS",
-    years: "3 Years",
-    icon: IoLogoElectron,
+    name: "GraphQL",
+    years: "1 Years",
+    icon: SiGraphql,
     iconSize: "18px",
   },
-  {
-    name: "MongoDB",
-    years: "3 Years",
-    icon: SiMongodb,
-    iconSize: "18px",
-  },
+
   {
     name: "PrismaJS",
     years: "3 Years",
@@ -168,9 +179,52 @@ export const technologies = [
   },
 
   {
-    name: "Django",
+    name: "Apollo",
+    years: "2 Years",
+    icon: SiApollographql,
+    iconSize: "18px",
+  },
+  {
+    name: "React-Query",
     years: "3 Years",
-    icon: SiDjango,
+    icon: IoLogoReact,
+    iconSize: "18px",
+  },
+  {
+    name: "Redux (RTK)",
+    years: "2 Years",
+    icon: SiRedux,
+    iconSize: "18px",
+  },
+  {
+    name: "Zustand",
+    years: "2 Years",
+    icon: GiBearHead,
+    iconSize: "18px",
+  },
+  {
+    name: "Formik/RHF",
+    years: "1 Years",
+    icon: SiGraphql,
+    iconSize: "18px",
+  },
+  {
+    name: "GQL-Codegen",
+    years: "1 Years",
+    icon: SiGraphql,
+    iconSize: "18px",
+  },
+  {
+    name: "Nivo",
+    years: "1 Years",
+    icon: AiOutlineDotChart,
+    iconSize: "18px",
+  },
+
+  {
+    name: "Sanity.io",
+    years: "3 Years",
+    icon: TbLetterS,
     iconSize: "18px",
   },
   {
@@ -183,6 +237,49 @@ export const technologies = [
     name: "CSS",
     years: "3 Years",
     icon: IoLogoCss3,
+    iconSize: "18px",
+  },
+  {
+    name: "MUI/Mantine",
+    years: "3 Years",
+    icon: SiMaterialui,
+    iconSize: "18px",
+  },
+  {
+    name: "PostgreSQL",
+    years: "3 Years",
+    icon: SiPostgresql,
+    iconSize: "18px",
+  },
+
+  {
+    name: "MongoDB",
+    years: "3 Years",
+    icon: SiMongodb,
+    iconSize: "18px",
+  },
+  {
+    name: "Hasura",
+    years: "3 Years",
+    icon: SiHasura,
+    iconSize: "18px",
+  },
+  {
+    name: "Firebase",
+    years: "3 Years",
+    icon: SiFirebase,
+    iconSize: "18px",
+  },
+  {
+    name: "Cypress",
+    years: "3 Years",
+    icon: SiCypress,
+    iconSize: "18px",
+  },
+  {
+    name: "ElectronJS",
+    years: "3 Years",
+    icon: IoLogoElectron,
     iconSize: "18px",
   },
   {
@@ -204,9 +301,15 @@ export const technologies = [
   //   iconSize: "18px",
   // },
   {
-    name: "Websocket",
+    name: "Socket.io",
     years: "1 Years",
     icon: SiSocketdotio,
+    iconSize: "18px",
+  },
+  {
+    name: "Postman",
+    years: "1 Years",
+    icon: SiPostman,
     iconSize: "18px",
   },
   {
@@ -233,49 +336,63 @@ export const technologies = [
     icon: SiAtlassian,
     iconSize: "18px",
   },
+  {
+    name: "Posthog",
+    years: "3 Years",
+    icon: GiHedgehog,
+    iconSize: "18px",
+  },
+  {
+    name: "Webhook",
+    years: "3 Years",
+    icon: TbWebhook,
+    iconSize: "18px",
+  },
+  {
+    name: "Stripe",
+    years: "3 Years",
+    icon: SiStripe,
+    iconSize: "18px",
+  },
+  {
+    name: "Paypal",
+    years: "3 Years",
+    icon: SiPaypal,
+    iconSize: "18px",
+  },
 ];
 
 export const engineering = [
-  {
-    name: "3D Modelling",
-    icon: BsFillGearFill,
-    iconSize: "12px",
-  },
-  {
-    name: "Fluid Dynamics",
-    icon: BsFillGearFill,
-    iconSize: "12px",
-  },
-  {
-    name: "Thermodynamics",
-    icon: BsFillGearFill,
-    iconSize: "12px",
-  },
-  {
-    name: "Acoustics Vibration",
-    icon: BsFillGearFill,
-    iconSize: "12px",
-  },
-  {
-    name: "Statistical Data Analysis",
-    icon: BsFillGearFill,
-    iconSize: "12px",
-  },
+  // {
+  //   name: "3D Modelling",
+  //   icon: BsFillGearFill,
+  //   iconSize: "12px",
+  // },
+  // {
+  //   name: "Fluid Dynamics",
+  //   icon: BsFillGearFill,
+  //   iconSize: "12px",
+  // },
+  // {
+  //   name: "Thermodynamics",
+  //   icon: BsFillGearFill,
+  //   iconSize: "12px",
+  // },
+  // {
+  //   name: "Acoustics Vibration",
+  //   icon: BsFillGearFill,
+  //   iconSize: "12px",
+  // },
+  // {
+  //   name: "Statistical Data Analysis",
+  //   icon: BsFillGearFill,
+  //   iconSize: "12px",
+  // },
 ];
 
 export const managerial = [
   {
-    name: "Lean Six Sigma Problem Solving",
-    iconSize: "12px",
-    icon: IoAccessibilitySharp,
-  },
-  {
     name: "Software Development Lifecycle",
-    iconSize: "12px",
-    icon: IoAccessibilitySharp,
-  },
-  {
-    name: "Agile Methodology",
     iconSize: "12px",
     icon: IoAccessibilitySharp,
   },
@@ -290,15 +407,25 @@ export const managerial = [
     icon: IoAccessibilitySharp,
   },
   {
-    name: "Business Process Management",
+    name: "Integrated Testing",
     iconSize: "12px",
     icon: IoAccessibilitySharp,
   },
   {
-    name: "Mentoring",
+    name: "Product Analytics",
     iconSize: "12px",
     icon: IoAccessibilitySharp,
   },
+  // {
+  //   name: "Design Intuition",
+  //   iconSize: "12px",
+  //   icon: IoAccessibilitySharp,
+  // },
+  // {
+  //   name: "Mentoring",
+  //   iconSize: "12px",
+  //   icon: IoAccessibilitySharp,
+  // },
 ];
 
 export const interest = [
@@ -336,32 +463,35 @@ export const interest = [
 
 export const workExperiences = [
   {
+    company: "Purplemana",
+    period: "April 2022 - Present",
+    role: "Sr. Front End Developer",
+    link: "https://purplemana.com",
+    description:
+      "Leading the frontend development for the feature-rich collectible trading card game marketplace with React, Typescript, Apollo GraphQL 3, Hasura and Styled-Components",
+    experiences: [
+      {
+        title: "",
+        points: [
+          "Working with the CEO, backend (Python and Hasura) and frontend engineers to rebuild the site from the Wordpress version covering product listing, marketplace, blogs to admin/merchant tools",
+          "Setup type-safe Graphql Codegen, state-management with Apollo 3, Graphql subscription (websocket) for notification system and other real-time features, Paypal integration, Sanity.io for content management, design system with Styled-Components, Posthog analytics and more..",
+        ],
+      },
+    ],
+  },
+  {
     company: "Dyson Development Center",
-    period: "Feb 2018 - Present",
+    period: "Feb 2018 - March 2022",
     role: "Solution Developer",
     description:
       "Working in a team that supports Test Department in developing integrated systems solution to improve the efficiency, quality & security of data handling & practices.",
     experiences: [
       {
-        title:
-          "Test Data Collecting Framework (JIRA's TestRail-like Application)",
+        title: "",
         points: [
           "Leading, designing and develop an integrated framework to render test-data-collection template from Python Scripts using React, Node, Electron, Redux & MongoDB",
-          "The framework handles API integration to the Test Request, Asset Management system and MongoDB's Test Data Storage. Also, Using Node's Python-Shell module to run Python Scripts for template initialization and calculation requests",
-        ],
-      },
-      {
-        title: "Asset Management System",
-        points: [
+          "Handles API integration to the Test Request, Asset Management system and MongoDB's Test Data Storage. Also, Using Node's Python-Shell module to run Python Scripts for template initialization and calculation requests",
           "Asset management system, replicating from Asset Panda, using NextJS, Postgres and Prisma ORM, replicating on-shelf tool, Asset Panda",
-          "Heavily customize the frontend side for user convenience to update a batch of data, integrated login with Azure Active Directory and build a rest API for other system to interact with",
-        ],
-      },
-      {
-        title: "Test Request Tool & Master Data Development",
-        points: [
-          "Design and Develop a simple tool for laboratory test requests using Django, Rest Framework and PostgreSQL with Vanilla JS",
-          "A simple tool to create and workflow a test request by associating 'Test Methods', Samples, Laboratories and operator",
         ],
       },
     ],
@@ -373,6 +503,12 @@ export const workExperiences = [
     description:
       "To build the confidence in web/software, development, I had to take up the freelancing job to gain more experience on how real-life development project works",
     experiences: [
+      {
+        title: "AJXB",
+        points: [
+          "Leading frontend development on a event management app, (similar to Eventbrite) using NextJS, React Query and MantineUI",
+        ],
+      },
       {
         title: "InsightTribe",
         points: [
@@ -387,29 +523,37 @@ export const workExperiences = [
       },
     ],
   },
-  {
-    company: "Mechanical Engineering",
-    period: "May 2015 - Jan 2018",
-    role: "Product Test Engineer",
-    description: "The years before I get into the tech world",
-    experiences: [
-      {
-        title: "Daikin Refrigeration, May 2015 - Jan 2018",
-        points: [
-          "Responsible of overseing the R&D Test Activity, Verifying Results & Reporting for Refrigeration Products. Began coding professionally with Excel VBA",
-        ],
-      },
-      {
-        title: "Vitrox Technology, May 2015 - Sept 2016",
-        points: [
-          "Design the machine vision hardwares for semiconductor inspection unit with SolidWorks",
-        ],
-      },
-    ],
-  },
+  // {
+  //   company: "Mechanical Engineering",
+  //   period: "May 2015 - Jan 2018",
+  //   role: "Product Test Engineer",
+  //   description: "The years before I get into the tech world",
+  //   experiences: [
+  //     {
+  //       title: "Daikin Refrigeration, May 2015 - Jan 2018",
+  //       points: [
+  //         "Responsible of overseing the R&D Test Activity, Verifying Results & Reporting for Refrigeration Products. Began coding professionally with Excel VBA",
+  //       ],
+  //     },
+  //     {
+  //       title: "Vitrox Technology, May 2015 - Sept 2016",
+  //       points: [
+  //         "Design the machine vision hardwares for semiconductor inspection unit with SolidWorks",
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 
 export const projects = [
+  {
+    title: "Side Projects",
+    points: [
+      "Keebitcool, Mech Keyboard Social App with T3 Stack (best stack ever!): \nhttps://keebitcool.com",
+      "My Repo is Better than yours, a repo scoring and comparison site: \nhttps://myrepoisbetterthanyours.netlify.app",
+      // "Personal NextJS Boilerplate: \nhttps://miy-next-boilerplate.vercel.app",
+    ],
+  },
   {
     title: "Yayasan Peneraju Digital Computing Course 2022",
     points: [
@@ -417,17 +561,7 @@ export const projects = [
     ],
   },
   {
-    title: "Hackathons",
-    points: [
-      "RHB Virtual Datathon 2022",
-      "MyHackathon 2021 - Digitizing Government Service",
-    ],
-  },
-  {
-    title: "Side Projects",
-    points: [
-      "My Repo is Better than yours, a repo scoring and comparison site: \nhttps://myrepoisbetterthanyours.netlify.app",
-      "Personal NextJS Boilerplate: \nhttps://miy-next-boilerplate.vercel.app",
-    ],
+    title: "Prior to Dev",
+    points: ["Mechanical Engineer (2015 - 2018)"],
   },
 ];

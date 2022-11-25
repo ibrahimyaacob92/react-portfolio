@@ -13,7 +13,7 @@
   background-color: white;
   box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
   display: grid;
-  grid-template-columns: 2.8in auto;
+  grid-template-columns: 2.9in auto;
   white-space: pre-line;
 }
 
@@ -87,6 +87,7 @@ h3 {
   font-weight: bold;
   color: var(--accent);
   margin-bottom: 5px;
+  padding-right: 10px;
 }
 
 .resume .subheader {
@@ -126,7 +127,7 @@ h3 {
 .resume .two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .resume .border-left {
@@ -157,4 +158,8 @@ h3 {
   .grey-background {
     padding: 0;
   }
+}
+
+br {
+  height: 10px;
 }
