@@ -498,7 +498,7 @@ export const workExperiences = [
   },
   {
     company: "Part-Time Freelancing",
-    period: "2020 - Present",
+    period: "2019 - Present",
     role: "Fullstack Developer (FE Focus)",
     description:
       "To build the confidence in web/software, development, I had to take up the freelancing job to gain more experience on how real-life development project works",
@@ -507,6 +507,12 @@ export const workExperiences = [
         title: "AJXB",
         points: [
           "Leading frontend development on a event management app, (similar to Eventbrite) using NextJS, React Query and MantineUI",
+        ],
+      },
+      {
+        title: "PDAX",
+        points: [
+          "Frontend freelance crypto exchange for Philippine using micro-frontend, ReactJS, Styled-Components and Recoil",
         ],
       },
       {
@@ -562,6 +568,8 @@ export const projects = [
   },
   {
     title: "Prior to Dev",
-    points: ["Mechanical Engineer (2015 - 2018)"],
+    points: [
+      "Mechanical Engineer / D&D at manufacturing companies (2015 - 2018)",
+    ],
   },
 ];
