@@ -569,7 +569,7 @@ export const projects = [
   {
     title: "Prior to Dev",
     points: [
-      "Mechanical Engineer / D&D at manufacturing companies (2015 - 2018)",
+      "Mechanical Engineer, D&D at manufacturing companies (2015 - 2018)",
     ],
   },
 ];
