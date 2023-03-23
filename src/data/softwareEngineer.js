@@ -314,30 +314,30 @@ export const technologies = [
     icon: SiPostman,
     iconSize: "18px",
   },
-  {
-    name: "OAuth2",
-    years: "1 Years",
-    icon: SiAuth0,
-    iconSize: "18px",
-  },
+  // {
+  //   name: "OAuth2",
+  //   years: "1 Years",
+  //   icon: SiAuth0,
+  //   iconSize: "18px",
+  // },
   {
     name: "Tableau",
     years: "1 Years",
     icon: IoLogoTableau,
     iconSize: "18px",
   },
-  {
-    name: "Excel VBA",
-    years: "3 Years",
-    icon: SiMicrosoftexcel,
-    iconSize: "18px",
-  },
-  {
-    name: "Atlassian",
-    years: "3 Years",
-    icon: SiAtlassian,
-    iconSize: "18px",
-  },
+  // {
+  //   name: "Excel VBA",
+  //   years: "3 Years",
+  //   icon: SiMicrosoftexcel,
+  //   iconSize: "18px",
+  // },
+  // {
+  //   name: "Atlassian",
+  //   years: "3 Years",
+  //   icon: SiAtlassian,
+  //   iconSize: "18px",
+  // },
   {
     name: "Posthog",
     years: "3 Years",
@@ -521,8 +521,8 @@ export const workExperiences = [
       {
         title: "",
         points: [
-          "Leading, designing and develop an integrated framework to render test-data-collection template from Python Scripts using React, Node, Electron, Redux & MongoDB",
-          "Handles API integration to the Test Request, Asset Management system and MongoDB's Test Data Storage. Also, Using Node's Python-Shell module to run Python Scripts for template initialization and calculation requests",
+          "Leading, designing and develop an integrated framework to render test-data-collection template from Python Scripts using React, Node, Electron, Redux & MongoDB. Node's Python-Shell module is used to run Python Scripts for template initialization and calculation requests",
+          "Handles API integration to the Test Request, Asset Management system and MongoDB's Test Data Storage.",
         ],
       },
     ],
