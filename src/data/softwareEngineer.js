@@ -48,6 +48,8 @@ import {
   SiStripe,
   SiPaypal,
   SiFirebase,
+  SiPwa,
+  SiVisualstudiocode,
 } from "react-icons/si";
 import { CgPiano } from "react-icons/cg";
 import {
@@ -360,6 +362,18 @@ export const technologies = [
     icon: SiPaypal,
     iconSize: "18px",
   },
+  {
+    name: "PWA",
+    years: "3 Years",
+    icon: SiPwa,
+    iconSize: "18px",
+  },
+  {
+    name: "VsCode Ext.",
+    years: "3 Years",
+    icon: SiVisualstudiocode,
+    iconSize: "18px",
+  },
 ];
 
 export const engineering = [
@@ -463,12 +477,30 @@ export const interest = [
 
 export const workExperiences = [
   {
+    company: "Talaqqi Education",
+    period: "January 2023 - Present",
+    role: "Lead Full Stack Developer",
+    link: "https://talaqqi.app",
+    description:
+      "Leading the development of a Malaysian based online marketplace startup for Islamic education where seller (Tutors) able to post their Class Packages based on their subject expertise and buyer (students) able to book a time slot with the tutor",
+
+    experiences: [
+      {
+        title: "",
+        points: [
+          "Used Create-T3-App (NextJS, TRPC, Prisma, NextAuth, MantineUI, Postgres) to build most of pages from Marketplace, tutor, student and the admin dashboard",
+          "Working with early users, tutors, student and the operation admin to develop the MVP and required the features. Prioritize and breakdown tasks to assign to developers",
+        ],
+      },
+    ],
+  },
+  {
     company: "Purplemana",
-    period: "April 2022 - Present",
+    period: "March 2022 - March 2023",
     role: "Sr. Front End Developer",
     link: "https://purplemana.com",
     description:
-      "Leading the frontend development for the feature-rich collectible trading card game marketplace with React, Typescript, Apollo GraphQL 3, Hasura and Styled-Components",
+      "Leading the frontend development for the high-end vintage collectible trading card game marketplace using React, Typescript, Apollo GraphQL 3, Hasura and Styled-Components",
     experiences: [
       {
         title: "",
@@ -491,7 +523,6 @@ export const workExperiences = [
         points: [
           "Leading, designing and develop an integrated framework to render test-data-collection template from Python Scripts using React, Node, Electron, Redux & MongoDB",
           "Handles API integration to the Test Request, Asset Management system and MongoDB's Test Data Storage. Also, Using Node's Python-Shell module to run Python Scripts for template initialization and calculation requests",
-          "Asset management system, replicating from Asset Panda, using NextJS, Postgres and Prisma ORM, replicating on-shelf tool, Asset Panda",
         ],
       },
     ],
@@ -521,12 +552,12 @@ export const workExperiences = [
           "Work on building WXllspace website, a US-based, platform start-up, that connects building (wall) owner to wall artist. The app uses MERN Stack equipped with Google Map, Mapbox, MailerSend API and AWS S3",
         ],
       },
-      {
-        title: "QuestDrive",
-        points: [
-          "Work on admin page system for online game application that initially uses React with TypeScript, Redux Toolkit and MUI",
-        ],
-      },
+      // {
+      //   title: "QuestDrive",
+      //   points: [
+      //     "Work on admin page system for online game application that initially uses React with TypeScript, Redux Toolkit and MUI",
+      //   ],
+      // },
     ],
   },
   // {
@@ -560,16 +591,16 @@ export const projects = [
       // "Personal NextJS Boilerplate: \nhttps://miy-next-boilerplate.vercel.app",
     ],
   },
-  {
-    title: "Yayasan Peneraju Digital Computing Course 2022",
-    points: [
-      "Four Months course of Digital Leadership and Microsoft Azure Certificates for Administrator, Security Engineer and Solution Architects",
-    ],
-  },
-  {
-    title: "Prior to Dev",
-    points: [
-      "Mechanical Engineer, D&D at manufacturing companies (2015 - 2018)",
-    ],
-  },
+  // {
+  //   title: "Yayasan Peneraju Digital Computing Course 2022",
+  //   points: [
+  //     "Four Months course of Digital Leadership and Microsoft Azure Certificates for Administrator, Security Engineer and Solution Architects",
+  //   ],
+  // },
+  // {
+  //   title: "Prior to Dev",
+  //   points: [
+  //     "Mechanical Engineer, D&D at manufacturing companies (2015 - 2017)",
+  //   ],
+  // },
 ];

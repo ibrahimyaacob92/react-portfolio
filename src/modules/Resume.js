@@ -206,6 +206,18 @@ const Resume = () => {
               ))}
             </div>
           </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "right",
+              fontStyle: "italic",
+              marginTop: 16,
+            }}
+          >
+            <a style={{ fontSize: 12 }} href="https://ibrahimyaacob.xyz">
+              View more in my porfolio
+            </a>
+          </div>
         </div>
       </div>
     </div>
